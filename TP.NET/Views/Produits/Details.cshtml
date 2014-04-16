@@ -1,0 +1,9 @@
+﻿@model TP.NETDAL.Model.Produits
+
+@{
+    foreach (var image in Model.Images)
+    {
+        string url = System.Web.Configuration.WebConfigurationManager.AppSettings["ImagePath"] + image.src;
+        <img src=@url alt="image" />
+    }
+}
