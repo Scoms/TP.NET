@@ -10,9 +10,11 @@ namespace TP.NET.Controllers
     {
         //
         // GET: /Produits/
+        public
 
         public ActionResult Index()
         {
+
             return View();
         }
 
