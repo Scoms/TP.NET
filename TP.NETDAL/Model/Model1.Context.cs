@@ -27,5 +27,6 @@ namespace TP.NETDAL.Model
     
         public DbSet<Images> Images { get; set; }
         public DbSet<Produits> Produits { get; set; }
+        public DbSet<Users> Users { get; set; }
     }
 }

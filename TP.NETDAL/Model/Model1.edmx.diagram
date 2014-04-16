@@ -8,6 +8,7 @@
         <EntityTypeShape EntityType="VenteEnLigneModel.Images" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="VenteEnLigneModel.Produits" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="VenteEnLigneModel.FK_Images_Produits" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VenteEnLigneModel.Users" Width="1.5" PointX="5.625" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
