@@ -22,5 +22,13 @@ namespace TP.NET.Service
                 return context.Produits.Include("Images").ToList();
             }
         }
+
+        internal Produits findByID(int id)
+        {
+            using (VenteEnLigneEntities context = new VenteEnLigneEntities())
+            {
+                return context.Produits.Include("Images").Where(p => p.id == id).FirstOrDefault();
+            }
+        }
     }
 }

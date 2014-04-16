@@ -22,6 +22,12 @@ namespace TP.NET.Controllers
             this._service = new ServiceProduits(this._eh);
         }
 
+        public ActionResult Details(int id)
+        {
+            Produits prod = this._service.findByID(id);
+            return View(prod);
+        }
+
         public ActionResult Index()
         {
             List<Produits> lProduits = this._service.findAll();
