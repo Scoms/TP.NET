@@ -126,12 +126,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProduitsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ServiceProduits.cs" />
+    <Compile Include="Utils\ErrorHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -207,6 +209,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="SQL\createDB.txt" />
+    <Content Include="SQL\script.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -218,6 +221,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Produits\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -229,7 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TP.NETDAL\TP.NETDAL.csproj">
-      <Project>{a884c8c7-b8c8-4000-9ae7-d369567b94cd}</Project>
+      <Project>{0de124cd-17bc-44e9-a126-a2d7693bff26}</Project>
       <Name>TP.NETDAL</Name>
     </ProjectReference>
   </ItemGroup>
