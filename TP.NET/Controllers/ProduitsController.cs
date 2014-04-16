@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TP.NET.Service;
+using TP.NETDAL.Model;
+using Utils;
 
 namespace TP.NET.Controllers
 {
@@ -10,12 +13,19 @@ namespace TP.NET.Controllers
     {
         //
         // GET: /Produits/
-        public
+        private ServiceProduits _service;
+        private ErrorHandler _eh;
+
+        public ProduitsController()
+        {
+            this._eh = new ErrorHandler();
+            this._service = new ServiceProduits(this._eh);
+        }
 
         public ActionResult Index()
         {
-
-            return View();
+            List<Produits> lProduits = this._service.findAll();
+            return View(lProduits);
         }
 
         //

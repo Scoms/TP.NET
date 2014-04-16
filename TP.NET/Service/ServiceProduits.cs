@@ -15,9 +15,9 @@ namespace TP.NET.Service
 
         public List<Produits> findAll()
         {
-            using (VenteEnLigneEntities context = new )
+            using (VenteEnLigneEntities context = new  VenteEnLigneEntities())
             {
-                
+                return context.Produits.Include("Image").ToList();
             }
         }
     }
